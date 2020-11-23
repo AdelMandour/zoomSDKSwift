@@ -7,6 +7,6 @@
 
 #ifndef Header_h
 #define Header_h
-
+#import <CommonCrypto/CommonHMAC.h>
 
 #endif /* Header_h */

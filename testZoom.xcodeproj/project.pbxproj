@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		642447ED25655432000350B7 /* CustomeUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642447EC25655432000350B7 /* CustomeUIViewController.swift */; };
+		6432200525612111005A0176 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6432200425612111005A0176 /* AppDelegate.swift */; };
+		6432200925612111005A0176 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6432200825612111005A0176 /* ViewController.swift */; };
+		6432200C25612111005A0176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6432200A25612111005A0176 /* Main.storyboard */; };
+		6432200E25612115005A0176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6432200D25612115005A0176 /* Assets.xcassets */; };
+		6432201125612115005A0176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6432200F25612115005A0176 /* LaunchScreen.storyboard */; };
+		644882BA256A6DB400B65674 /* ZoomModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644882B9256A6DB400B65674 /* ZoomModule.swift */; };
+		64F89B55256167190039E9BD /* MobileRTCResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 64F89B54256167190039E9BD /* MobileRTCResources.bundle */; };
+		64F89B582561672D0039E9BD /* MobileRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F89B522561670C0039E9BD /* MobileRTC.framework */; };
+		64F89B592561672D0039E9BD /* MobileRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 64F89B522561670C0039E9BD /* MobileRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6432201825612115005A0176 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64321FF925612111005A0176 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6432200025612111005A0176;
+			remoteInfo = testZoom;
+		};
+		6432202325612115005A0176 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64321FF925612111005A0176 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6432200025612111005A0176;
+			remoteInfo = testZoom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64F89B422561608B0039E9BD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				64F89B592561672D0039E9BD /* MobileRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		642447EC25655432000350B7 /* CustomeUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeUIViewController.swift; sourceTree = "<group>"; };
+		6432200125612111005A0176 /* testZoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testZoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6432200425612111005A0176 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6432200825612111005A0176 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6432200B25612111005A0176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6432200D25612115005A0176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6432201025612115005A0176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6432201225612115005A0176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6432201725612115005A0176 /* testZoomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testZoomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6432202225612115005A0176 /* testZoomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testZoomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		644879D62562B4930062BA38 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		644882B9256A6DB400B65674 /* ZoomModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomModule.swift; sourceTree = "<group>"; };
+		64F89B522561670C0039E9BD /* MobileRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileRTC.framework; path = "../../../Downloads/zoom-sdk-ios-5.2.41739.1022 2/Sample&Libs-DeviceOnly/lib/MobileRTC.framework"; sourceTree = "<group>"; };
+		64F89B54256167190039E9BD /* MobileRTCResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobileRTCResources.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64321FFE25612111005A0176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64F89B582561672D0039E9BD /* MobileRTC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6432201425612115005A0176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6432201F25612115005A0176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6401EED325612A3500BBC742 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64321FF825612111005A0176 = {
+			isa = PBXGroup;
+			children = (
+				64F89B54256167190039E9BD /* MobileRTCResources.bundle */,
+				6432200325612111005A0176 /* testZoom */,
+				6432200225612111005A0176 /* Products */,
+				6401EED325612A3500BBC742 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6432200225612111005A0176 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6432200125612111005A0176 /* testZoom.app */,
+				6432201725612115005A0176 /* testZoomTests.xctest */,
+				6432202225612115005A0176 /* testZoomUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6432200325612111005A0176 /* testZoom */ = {
+			isa = PBXGroup;
+			children = (
+				64F89B522561670C0039E9BD /* MobileRTC.framework */,
+				6432200425612111005A0176 /* AppDelegate.swift */,
+				6432200825612111005A0176 /* ViewController.swift */,
+				6432200A25612111005A0176 /* Main.storyboard */,
+				6432200D25612115005A0176 /* Assets.xcassets */,
+				6432200F25612115005A0176 /* LaunchScreen.storyboard */,
+				6432201225612115005A0176 /* Info.plist */,
+				644879D62562B4930062BA38 /* Header.h */,
+				642447EC25655432000350B7 /* CustomeUIViewController.swift */,
+				644882B9256A6DB400B65674 /* ZoomModule.swift */,
+			);
+			path = testZoom;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6432200025612111005A0176 /* testZoom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6432202B25612115005A0176 /* Build configuration list for PBXNativeTarget "testZoom" */;
+			buildPhases = (
+				64321FFD25612111005A0176 /* Sources */,
+				64321FFE25612111005A0176 /* Frameworks */,
+				64321FFF25612111005A0176 /* Resources */,
+				64F89B422561608B0039E9BD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testZoom;
+			productName = testZoom;
+			productReference = 6432200125612111005A0176 /* testZoom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6432201625612115005A0176 /* testZoomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6432202E25612115005A0176 /* Build configuration list for PBXNativeTarget "testZoomTests" */;
+			buildPhases = (
+				6432201325612115005A0176 /* Sources */,
+				6432201425612115005A0176 /* Frameworks */,
+				6432201525612115005A0176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6432201925612115005A0176 /* PBXTargetDependency */,
+			);
+			name = testZoomTests;
+			productName = testZoomTests;
+			productReference = 6432201725612115005A0176 /* testZoomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6432202125612115005A0176 /* testZoomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6432203125612115005A0176 /* Build configuration list for PBXNativeTarget "testZoomUITests" */;
+			buildPhases = (
+				6432201E25612115005A0176 /* Sources */,
+				6432201F25612115005A0176 /* Frameworks */,
+				6432202025612115005A0176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6432202425612115005A0176 /* PBXTargetDependency */,
+			);
+			name = testZoomUITests;
+			productName = testZoomUITests;
+			productReference = 6432202225612115005A0176 /* testZoomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64321FF925612111005A0176 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					6432200025612111005A0176 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					6432201625612115005A0176 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 6432200025612111005A0176;
+					};
+					6432202125612115005A0176 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 6432200025612111005A0176;
+					};
+				};
+			};
+			buildConfigurationList = 64321FFC25612111005A0176 /* Build configuration list for PBXProject "testZoom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64321FF825612111005A0176;
+			productRefGroup = 6432200225612111005A0176 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6432200025612111005A0176 /* testZoom */,
+				6432201625612115005A0176 /* testZoomTests */,
+				6432202125612115005A0176 /* testZoomUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64321FFF25612111005A0176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6432201125612115005A0176 /* LaunchScreen.storyboard in Resources */,
+				64F89B55256167190039E9BD /* MobileRTCResources.bundle in Resources */,
+				6432200E25612115005A0176 /* Assets.xcassets in Resources */,
+				6432200C25612111005A0176 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6432201525612115005A0176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6432202025612115005A0176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64321FFD25612111005A0176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6432200925612111005A0176 /* ViewController.swift in Sources */,
+				6432200525612111005A0176 /* AppDelegate.swift in Sources */,
+				644882BA256A6DB400B65674 /* ZoomModule.swift in Sources */,
+				642447ED25655432000350B7 /* CustomeUIViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6432201325612115005A0176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6432201E25612115005A0176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6432201925612115005A0176 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6432200025612111005A0176 /* testZoom */;
+			targetProxy = 6432201825612115005A0176 /* PBXContainerItemProxy */;
+		};
+		6432202425612115005A0176 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6432200025612111005A0176 /* testZoom */;
+			targetProxy = 6432202325612115005A0176 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6432200A25612111005A0176 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6432200B25612111005A0176 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6432200F25612115005A0176 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6432201025612115005A0176 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6432202925612115005A0176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6432202A25612115005A0176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6432202C25612115005A0176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5J7D4R4RHR;
+				DYLIB_INSTALL_NAME_BASE = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/testZoom/lib",
+					"$(PROJECT_DIR)/testZoom",
+				);
+				INFOPLIST_FILE = testZoom/Info.plist;
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adel.testZoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = testZoom/Header.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6432202D25612115005A0176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5J7D4R4RHR;
+				DYLIB_INSTALL_NAME_BASE = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/testZoom/lib",
+					"$(PROJECT_DIR)/testZoom",
+				);
+				INFOPLIST_FILE = testZoom/Info.plist;
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adel.testZoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = testZoom/Header.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6432202F25612115005A0176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = testZoomTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adel.testZoomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testZoom.app/testZoom";
+			};
+			name = Debug;
+		};
+		6432203025612115005A0176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = testZoomTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adel.testZoomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testZoom.app/testZoom";
+			};
+			name = Release;
+		};
+		6432203225612115005A0176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = testZoomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adel.testZoomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = testZoom;
+			};
+			name = Debug;
+		};
+		6432203325612115005A0176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = testZoomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adel.testZoomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = testZoom;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64321FFC25612111005A0176 /* Build configuration list for PBXProject "testZoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6432202925612115005A0176 /* Debug */,
+				6432202A25612115005A0176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6432202B25612115005A0176 /* Build configuration list for PBXNativeTarget "testZoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6432202C25612115005A0176 /* Debug */,
+				6432202D25612115005A0176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6432202E25612115005A0176 /* Build configuration list for PBXNativeTarget "testZoomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6432202F25612115005A0176 /* Debug */,
+				6432203025612115005A0176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6432203125612115005A0176 /* Build configuration list for PBXNativeTarget "testZoomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6432203225612115005A0176 /* Debug */,
+				6432203325612115005A0176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64321FF925612111005A0176 /* Project object */;
+}

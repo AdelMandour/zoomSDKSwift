@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="mainView" id="BYZ-38-t0r" customClass="ViewController" customModule="testZoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuY-m8-2Ti">
+                                <rect key="frame" x="162.5" y="233" width="89" height="30"/>
+                                <state key="normal" title="Join Meeting"/>
+                                <connections>
+                                    <action selector="joinAMeetingButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2k3-RB-Tqi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otc-wi-TrG">
+                                <rect key="frame" x="124.5" y="283" width="165" height="30"/>
+                                <state key="normal" title="Start an instant Meeting"/>
+                                <connections>
+                                    <action selector="startAnInstantMeetingButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m7D-mc-fd8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imh-wO-JTh">
+                                <rect key="frame" x="139" y="350" width="136" height="30"/>
+                                <state key="normal" title="Schedule a meeting"/>
+                                <connections>
+                                    <action selector="scheduleAMeeting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iTz-wV-JTl"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="1z0-iG-uxd">
+                                <rect key="frame" x="0.0" y="400" width="414" height="216"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Otc-wi-TrG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Cm-AZ-4fu"/>
+                            <constraint firstItem="tuY-m8-2Ti" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="ETd-To-GD4"/>
+                            <constraint firstItem="Otc-wi-TrG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="Pow-G6-jCx"/>
+                            <constraint firstItem="1z0-iG-uxd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yfx-vh-YBb"/>
+                            <constraint firstItem="1z0-iG-uxd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dbD-8Q-4Hn"/>
+                            <constraint firstItem="1z0-iG-uxd" firstAttribute="top" secondItem="imh-wO-JTh" secondAttribute="bottom" constant="20" id="k57-8u-8I7"/>
+                            <constraint firstItem="tuY-m8-2Ti" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q3Q-4M-dZb"/>
+                            <constraint firstItem="imh-wO-JTh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tzv-E4-rsl"/>
+                            <constraint firstItem="imh-wO-JTh" firstAttribute="top" secondItem="Otc-wi-TrG" secondAttribute="bottom" constant="37" id="z4j-yf-0lL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hln-Nh-EgV"/>
+                    <connections>
+                        <outlet property="datePicker" destination="1z0-iG-uxd" id="Ihq-da-p4h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713.04347826086962" y="55.580357142857139"/>
+        </scene>
+        <!--CustomeUI View Controller-->
+        <scene sceneID="Vez-b4-5AX">
+            <objects>
+                <viewController id="CEY-we-Pwa" customClass="CustomeUIViewController" customModule="testZoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wl0-ch-myd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PFm-P6-Ds5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NGq-BZ-RBc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="68"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
